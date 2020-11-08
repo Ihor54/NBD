@@ -1,0 +1,371 @@
+MongoDB shell version v4.4.1
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("77e08915-6569-4869-92aa-385fab3dbd0a") }
+MongoDB server version: 4.4.1
+[
+	{
+		"_id" : "AFN",
+		"averageAmount" : 5585.163333333334,
+		"totalAmount" : 16755.49
+	},
+	{
+		"_id" : "ALL",
+		"averageAmount" : 3325.48,
+		"totalAmount" : 3325.48
+	},
+	{
+		"_id" : "AMD",
+		"averageAmount" : 4921.866,
+		"totalAmount" : 24609.33
+	},
+	{
+		"_id" : "ARS",
+		"averageAmount" : 4648.4,
+		"totalAmount" : 23242
+	},
+	{
+		"_id" : "BGN",
+		"averageAmount" : 5300.22,
+		"totalAmount" : 21200.88
+	},
+	{
+		"_id" : "BOB",
+		"averageAmount" : 5263.3,
+		"totalAmount" : 5263.3
+	},
+	{
+		"_id" : "BRL",
+		"averageAmount" : 4512.001818181819,
+		"totalAmount" : 49632.020000000004
+	},
+	{
+		"_id" : "BWP",
+		"averageAmount" : 4076.29,
+		"totalAmount" : 4076.29
+	},
+	{
+		"_id" : "BYR",
+		"averageAmount" : 5095.79,
+		"totalAmount" : 5095.79
+	},
+	{
+		"_id" : "CAD",
+		"averageAmount" : 5306.872727272727,
+		"totalAmount" : 58375.6
+	},
+	{
+		"_id" : "CDF",
+		"averageAmount" : 6114.4,
+		"totalAmount" : 12228.8
+	},
+	{
+		"_id" : "CLP",
+		"averageAmount" : 5252.2375,
+		"totalAmount" : 21008.95
+	},
+	{
+		"_id" : "CNY",
+		"averageAmount" : 4954.740842105263,
+		"totalAmount" : 470700.38
+	},
+	{
+		"_id" : "COP",
+		"averageAmount" : 4936.6825,
+		"totalAmount" : 19746.73
+	},
+	{
+		"_id" : "CUP",
+		"averageAmount" : 5005.78,
+		"totalAmount" : 15017.34
+	},
+	{
+		"_id" : "CZK",
+		"averageAmount" : 4644.5525,
+		"totalAmount" : 37156.42
+	},
+	{
+		"_id" : "DOP",
+		"averageAmount" : 5168.6849999999995,
+		"totalAmount" : 20674.739999999998
+	},
+	{
+		"_id" : "EGP",
+		"averageAmount" : 5579.3,
+		"totalAmount" : 5579.3
+	},
+	{
+		"_id" : "ETB",
+		"averageAmount" : 5436.11,
+		"totalAmount" : 5436.11
+	},
+	{
+		"_id" : "EUR",
+		"averageAmount" : 4901.8294,
+		"totalAmount" : 245091.47
+	},
+	{
+		"_id" : "GBP",
+		"averageAmount" : 6149.19,
+		"totalAmount" : 6149.19
+	},
+	{
+		"_id" : "GTQ",
+		"averageAmount" : 5806.3,
+		"totalAmount" : 5806.3
+	},
+	{
+		"_id" : "HNL",
+		"averageAmount" : 5504.863333333334,
+		"totalAmount" : 16514.59
+	},
+	{
+		"_id" : "HRK",
+		"averageAmount" : 4870.964,
+		"totalAmount" : 24354.82
+	},
+	{
+		"_id" : "IDR",
+		"averageAmount" : 4907.918030303031,
+		"totalAmount" : 323922.59
+	},
+	{
+		"_id" : "ILS",
+		"averageAmount" : 5431.83,
+		"totalAmount" : 16295.49
+	},
+	{
+		"_id" : "IQD",
+		"averageAmount" : 4269.39,
+		"totalAmount" : 4269.39
+	},
+	{
+		"_id" : "IRR",
+		"averageAmount" : 4417.373333333333,
+		"totalAmount" : 26504.239999999998
+	},
+	{
+		"_id" : "ISK",
+		"averageAmount" : 4316.41,
+		"totalAmount" : 4316.41
+	},
+	{
+		"_id" : "JPY",
+		"averageAmount" : 5078.7283333333335,
+		"totalAmount" : 60944.74
+	},
+	{
+		"_id" : "KRW",
+		"averageAmount" : 6689.91,
+		"totalAmount" : 13379.82
+	},
+	{
+		"_id" : "KYD",
+		"averageAmount" : 3760.89,
+		"totalAmount" : 3760.89
+	},
+	{
+		"_id" : "KZT",
+		"averageAmount" : 3788.95,
+		"totalAmount" : 3788.95
+	},
+	{
+		"_id" : "LYD",
+		"averageAmount" : 4382.495,
+		"totalAmount" : 8764.99
+	},
+	{
+		"_id" : "MAD",
+		"averageAmount" : 3818.85,
+		"totalAmount" : 3818.85
+	},
+	{
+		"_id" : "MGA",
+		"averageAmount" : 4853.663333333333,
+		"totalAmount" : 14560.99
+	},
+	{
+		"_id" : "MKD",
+		"averageAmount" : 3835.05,
+		"totalAmount" : 3835.05
+	},
+	{
+		"_id" : "MMK",
+		"averageAmount" : 4629.42,
+		"totalAmount" : 4629.42
+	},
+	{
+		"_id" : "MNT",
+		"averageAmount" : 5428.9025,
+		"totalAmount" : 21715.61
+	},
+	{
+		"_id" : "MWK",
+		"averageAmount" : 3574.42,
+		"totalAmount" : 3574.42
+	},
+	{
+		"_id" : "MXN",
+		"averageAmount" : 5022.9,
+		"totalAmount" : 50229
+	},
+	{
+		"_id" : "MYR",
+		"averageAmount" : 4781.12,
+		"totalAmount" : 4781.12
+	},
+	{
+		"_id" : "NGN",
+		"averageAmount" : 4157.705,
+		"totalAmount" : 24946.23
+	},
+	{
+		"_id" : "NIO",
+		"averageAmount" : 4985.64,
+		"totalAmount" : 9971.28
+	},
+	{
+		"_id" : "NOK",
+		"averageAmount" : 4773.66,
+		"totalAmount" : 4773.66
+	},
+	{
+		"_id" : "NPR",
+		"averageAmount" : 5792.26,
+		"totalAmount" : 5792.26
+	},
+	{
+		"_id" : "NZD",
+		"averageAmount" : 5328.46,
+		"totalAmount" : 5328.46
+	},
+	{
+		"_id" : "PEN",
+		"averageAmount" : 4661.235,
+		"totalAmount" : 18644.94
+	},
+	{
+		"_id" : "PHP",
+		"averageAmount" : 4941.928333333333,
+		"totalAmount" : 118606.28
+	},
+	{
+		"_id" : "PKR",
+		"averageAmount" : 4734.5,
+		"totalAmount" : 18938
+	},
+	{
+		"_id" : "PLN",
+		"averageAmount" : 5042.821111111111,
+		"totalAmount" : 90770.78
+	},
+	{
+		"_id" : "PYG",
+		"averageAmount" : 4874.69,
+		"totalAmount" : 4874.69
+	},
+	{
+		"_id" : "RSD",
+		"averageAmount" : 4276.56,
+		"totalAmount" : 4276.56
+	},
+	{
+		"_id" : "RUB",
+		"averageAmount" : 4989.547916666666,
+		"totalAmount" : 119749.15
+	},
+	{
+		"_id" : "RWF",
+		"averageAmount" : 4632.88,
+		"totalAmount" : 4632.88
+	},
+	{
+		"_id" : "SEK",
+		"averageAmount" : 5060.013571428572,
+		"totalAmount" : 70840.19
+	},
+	{
+		"_id" : "SRD",
+		"averageAmount" : 5286.68,
+		"totalAmount" : 5286.68
+	},
+	{
+		"_id" : "THB",
+		"averageAmount" : 4604.392,
+		"totalAmount" : 23021.96
+	},
+	{
+		"_id" : "TJS",
+		"averageAmount" : 4087.71,
+		"totalAmount" : 4087.71
+	},
+	{
+		"_id" : "TZS",
+		"averageAmount" : 3526.1850000000004,
+		"totalAmount" : 7052.370000000001
+	},
+	{
+		"_id" : "UAH",
+		"averageAmount" : 5058.9800000000005,
+		"totalAmount" : 40471.840000000004
+	},
+	{
+		"_id" : "USD",
+		"averageAmount" : 4978.732,
+		"totalAmount" : 74680.98
+	},
+	{
+		"_id" : "UZS",
+		"averageAmount" : 3573.03,
+		"totalAmount" : 3573.03
+	},
+	{
+		"_id" : "VEF",
+		"averageAmount" : 4166.64,
+		"totalAmount" : 8333.28
+	},
+	{
+		"_id" : "VND",
+		"averageAmount" : 4520.0325,
+		"totalAmount" : 36160.26
+	},
+	{
+		"_id" : "VUV",
+		"averageAmount" : 6418.27,
+		"totalAmount" : 6418.27
+	},
+	{
+		"_id" : "XAF",
+		"averageAmount" : 4698.22,
+		"totalAmount" : 14094.66
+	},
+	{
+		"_id" : "XOF",
+		"averageAmount" : 5960.683333333333,
+		"totalAmount" : 17882.05
+	},
+	{
+		"_id" : "XPF",
+		"averageAmount" : 4759.07,
+		"totalAmount" : 4759.07
+	},
+	{
+		"_id" : "YER",
+		"averageAmount" : 4570.833333333333,
+		"totalAmount" : 13712.5
+	},
+	{
+		"_id" : "ZAR",
+		"averageAmount" : 3930.306666666667,
+		"totalAmount" : 11790.92
+	},
+	{
+		"_id" : "ZMW",
+		"averageAmount" : 5569.56,
+		"totalAmount" : 5569.56
+	},
+	{
+		"_id" : "ZWL",
+		"averageAmount" : 5792.17,
+		"totalAmount" : 5792.17
+	}
+]
