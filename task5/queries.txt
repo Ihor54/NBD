@@ -1,0 +1,29 @@
+1. match (m:Movie) return m
+2. match (a:Person)-[:ACTED_IN]->(m:Movie) where a.name="Hugo Weaving" return m
+3. match (a:Person)-[:ACTED_IN]->(m:Movie) where a.name="Hugo Weaving" with m as movie match (d:Person)-[:DIRECTED]-(movie) return distinct d
+4. match (a:Person)-[:ACTED_IN]->(m:Movie) where a.name="Hugo Weaving" with m as movie match (d:Person)-[:ACTED_IN]-(movie) return distinct  d
+5. match (p:Person)-[:ACTED_IN]-(m:Movie) where m.title="The Matrix" with p as actor match (p)-[:ACTED_IN]-(z:Movie) return z
+6. match (p:Person)-[r:ACTED_IN]-(m:Movie) with p, count(r) as roles where roles>0 return p, roles
+7. match (p:Person)-[r:WROTE]-(m:Movie) with p, m match (p)-[:DIRECTED]-(m) return p, m.title
+8. match (p:Person)-[r:ACTED_IN]-(m:Movie) where p.name="Hugo Weaving" with p, m as Movies match (a:Person)-[:ACTED_IN]-(m) where a.name="Keanu Reeves" return m
+9.
+Create (CaptainAmerica:Movie{title:'Captain America: The First Avenger', released:2011, tagline:'When patriots become heroes'})
+Create (JoeJohnson:Person{name:'Joe Johnston', born:1950})
+Create (JoeJohnson)-[:DIRECTED]->(CaptainAmerica)
+Create (ChristopherMarkus:Person{name:'Christopher Markus', born:1970})
+Create (StephenMcFeely:Person{name:'Stephen McFeely', born:1969})
+Create (ChristopherMarkus)-[:WROTE]->(CaptainAmerica)
+Create (StephenMcFeely)-[:WROTE]->(CaptainAmerica)
+Create (ChrisEvans:Person{name:'Chris Evans', born:1981})
+Create (SamuelJackson:Person{name:'Samuel L. Jackson', born:1948})
+Create (ChrisEvans)-[:ACTED_IN]->(CaptainAmerica)
+Create (SamuelJackson)-[:ACTED_IN]->(CaptainAmerica)
+match (a:Person), (m:Movie) where a.name="Hugo Weaving" and m.title="Captain America: The First Avenger" Create (a)-[:ACTED_IN]->(m)
+
+10. match (a:Person)-[:ACTED_IN]->(m:Movie)<-[:DIRECTED]-(d:Person) 
+where m.title="Captain America: The First Avenger"
+with a, m, d 
+match (w:Person)-[:WROTE]->(m)
+return a, m, d, w
+
+​

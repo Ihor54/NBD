@@ -1,0 +1,5 @@
+1. 
+match (t:town{name:"Darjeeling"}), (p:peak{name:"Sandakphu"})  with p, t 
+match path=shortestPath((t)-[*]-(p)) 
+where path.winter=true
+return path
