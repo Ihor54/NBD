@@ -1,5 +1,21 @@
 1. 
-match (t:town{name:"Darjeeling"}), (p:peak{name:"Sandakphu"})  with p, t 
-match path=shortestPath((t)-[*]-(p)) 
-where path.winter=true
+match path=shortestPath((t:town {name:"Darjeeling"})-[*]->(p:peak{name:"Sandakphu"}))
+where ALL(r IN relationships(path) WHERE r.winter='true')
 return path
+2. match path=(t:town {name:"Darjeeling"})-[*]->(p:peak{name:"Sandakphu"}) 
+return reduce(ac=0, r in relationships(path) | ac + r.distance) as dist, path
+order by dist
+3. match path=(t:town {name:"Darjeeling"})-[:twowheeler]->(p)
+where ALL(r IN relationships(path) WHERE r.winter='true')
+return p
+4. 
+Match (a:Airport)<-[r:ORIGIN]-(f:Flight) 
+return a, count(f) as flightNum
+order by flightNum
+
+5. List of all airports you can reach (directly or indirectly) from LAX spending less than 3000
+
+//
+to improve the graph by adding additional relation to make it easier to query
+create a query in which find airport, fligth, ticket
+based on this create a new relation between 2 airports using this data
