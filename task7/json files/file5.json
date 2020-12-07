@@ -1,0 +1,18 @@
+{
+   "name":"HyperX Fury DDR4 RGB",
+   "price":450,
+   "productType":"RAM",
+   "warrantyYears":10,
+   "speeds":[
+      2400,
+      2666,
+      3000,
+      3200,
+      3466,
+      3600,
+      3733
+   ],
+   "formFactor":"UDIMM",
+   "xmpReady":true,
+   "capacityGb":16
+}

@@ -1,0 +1,33 @@
+1. 
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name":"NZXT H510I","price":470,"productType":"PC Case","color":"Black and red"}' http://localhost:8098/buckets/s15293/keys/pcCase
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name":"Gigabyte GeForce RTX 3060Ti Eagle","price":2300,"productType":"Graphics Card","color":"Grey"}' http://localhost:8098/buckets/s15293/keys/graphicsCard
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name":"AMD Ryzen 5 5600X","price":1500,"productType":"Processor","warrantyYears":3}' http://localhost:8098/buckets/s15293/keys/processor
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name":"Kraken Z73","price":700,"productType":"AIO Liquid Cooler","warrantyYears":6}' http://localhost:8098/buckets/s15293/keys/liquidCooler
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name":"HyperX Fury DDR4 RGB","price":450,"productType":"RAM","speeds":[2400,2666,3000,3200,3466,3600,3733]}' http://localhost:8098/buckets/s15293/keys/ram
+
+2. 
+curl -i http://localhost:8098/buckets/s15293/keys/ram
+
+3. 
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name":"NZXT H510I","price":470,"productType":"PC Case","color":"Black and red","warrantyYears":2}' http://localhost:8098/buckets/s15293/keys/pcCase
+
+4. 
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name":"AMD Ryzen 5 5600X","price":1500,"productType":"Processor"}' http://localhost:8098/buckets/s15293/keys/processor
+
+5. 
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name":"Kraken Z73","price":900,"productType":"AIO Liquid Cooler","warrantyYears":6}' http://localhost:8098/buckets/s15293/keys/liquidCooler
+
+6. 
+curl -i -XDELETE http://localhost:8098/buckets/s15293/keys/processor
+
+7. 
+curl -i http://localhost:8098/buckets/s15293/keys/processor
+
+8. 
+curl -i -d '{"name":"CORSAIR RM850x","price":770,"productType":"Power supply","color":"Grey"}' -H "Content-Type: application/json" -X POST http://localhost:8098/buckets/s15293/keys
+
+9. 
+curl -i http://localhost:8098/buckets/s15293/keys/A44PqZIdluOFA6LPfCGH1VjrLIu
+
+10.
+curl -i -XDELETE http://localhost:8098/buckets/s15293/keys/A44PqZIdluOFA6LPfCGH1VjrLIu

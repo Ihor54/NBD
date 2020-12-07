@@ -1,0 +1,10 @@
+{
+   "name":"Kraken Z73",
+   "price":700,
+   "productType":"AIO Liquid Cooler",
+   "warrantyYears":6,
+   "tubeLength":400,
+   "fanNr":3,
+   "connector":"4 pin",
+   "noise":"21-36dBA"
+}

@@ -1,0 +1,12 @@
+{
+   "name":"NZXT H510I",
+   "price":470,
+   "productType":"PC Case",
+   "color":"Black and red",
+   "warrantyYears":2,
+   "compatipility":[
+      "ATX",
+      "Micro ATX",
+      "Mini ITX"
+   ]
+}

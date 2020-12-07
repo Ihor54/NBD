@@ -1,0 +1,84 @@
+2. 
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8tgFmdkbMj9KBbKYMpkTmPFaGmqVON/myAA==
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s15293>; rel="up"
+Last-Modified: Mon, 07 Dec 2020 13:09:16 GMT
+ETag: "3mrwOTFZuOPs7ztGnsVW9B"
+Date: Mon, 07 Dec 2020 13:10:52 GMT
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 99
+
+'{name:HyperX Fury DDR4 RGB,price:450,productType:RAM,speeds:[2400,2666,3000,3200,3466,3600,3733]}'
+3. 
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Mon, 07 Dec 2020 13:14:00 GMT
+Content-Type: application/json
+Content-Length: 0
+
+4.
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Mon, 07 Dec 2020 13:16:31 GMT
+Content-Type: application/json
+Content-Length: 0
+
+5.
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Mon, 07 Dec 2020 13:17:24 GMT
+Content-Type: application/json
+Content-Length: 0
+
+6.
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Mon, 07 Dec 2020 13:18:44 GMT
+Content-Type: application/json
+Content-Length: 0
+
+7.
+HTTP/1.1 404 Object Not Found
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Mon, 07 Dec 2020 13:19:09 GMT
+Content-Type: text/plain
+Content-Length: 10
+
+not found
+
+8.
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /buckets/s15293/keys/A44PqZIdluOFA6LPfCGH1VjrLIu
+Date: Mon, 07 Dec 2020 13:26:00 GMT
+Content-Type: application/json
+Content-Length: 0
+
+9.
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8tgFmdkaMMY8gQomMeawMGSudbvJlAQA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s15293>; rel="up"
+Last-Modified: Mon, 07 Dec 2020 13:26:00 GMT
+ETag: "672Nq1HzohYgIkKe0v9g54"
+Date: Mon, 07 Dec 2020 13:29:51 GMT
+Content-Type: application/json
+Content-Length: 69
+
+'{name:CORSAIR RM850x,price:770,productType:Power supply,color:Grey}'
+
+10.
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Mon, 07 Dec 2020 13:30:55 GMT
+Content-Type: application/json
+Content-Length: 0

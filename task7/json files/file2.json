@@ -1,0 +1,10 @@
+{
+   "name":"Gigabyte GeForce RTX 3060Ti Eagle",
+   "price":2300,
+   "productType":"Graphics Card",
+   "color":"Grey",
+   "warrantyYears":2,
+   "numberOfFans":2,
+   "cardLength":242,
+   "ramGb":8
+}
