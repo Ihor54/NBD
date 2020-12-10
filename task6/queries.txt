@@ -13,9 +13,60 @@ Match (a:Airport)<-[r:ORIGIN]-(f:Flight)
 return a, count(f) as flightNum
 order by flightNum
 
-5. List of all airports you can reach (directly or indirectly) from LAX spending less than 3000
+To improve the graph we need to add some relations and properties to make it easier to query
+Economy prices:
+MATCH (f:Flight)<-[a:ASSIGN]-(t:Ticket{class:"economy"})
+SET f.economyPrice = t.price
+RETURN f
 
-//
-to improve the graph by adding additional relation to make it easier to query
-create a query in which find airport, fligth, ticket
-based on this create a new relation between 2 airports using this data
+Business prices:
+MATCH (f:Flight)<-[a:ASSIGN]-(t:Ticket{class:"business"})
+SET f.businessPrice = t.price
+RETURN f
+
+FirstClass prices:
+MATCH (f:Flight)<-[a:ASSIGN]-(t:Ticket{class:"firstClass"})
+SET f.firstClassPrice = t.price
+RETURN f
+
+Create routes between airports:
+MATCH (a1:Airport)<-[o:ORIGIN]-(f:Flight)-[d:DESTINATION]->(a2:Airport)
+UNWIND [f.economyPrice,f.businessPrice,f.firstClassPrice] as prices
+WITH a1,f,a2,min(prices) as minPrice
+CREATE (a1)-[r:ROUTE{flight:id(f), minPrice:minPrice, airline:f.airline, businessPrice:f.businessPrice, economyPrice:f.economyPrice, firstClassPrice:f.firstClassPrice, date:f.date, distance:f.distance,duration:f.duration}]->(a2)
+return a1,r,a2
+
+5. 
+MATCH (a1:Airport{name:"LAX"})-[r:ROUTE*]->(a2:Airport)
+WHERE reduce(price=0, x IN r | price + x.minPrice) < 3000
+RETURN a1,r,a2
+limit 5
+
+6.
+MATCH paths=allShortestPaths((start:Airport{ name:'LAX'})-[r:ROUTE*]->(end:Airport{name:'DAY'}))
+RETURN paths, reduce(price=0, route in r | price + route.minPrice) as pathPrice
+ORDER BY pathPrice
+
+7. 
+MATCH paths=allShortestPaths((start:Airport{name:'LAX'})-[r:ROUTE*]->(end:Airport{name:'DAY'}))
+RETURN paths, reduce(price=0, route in r | price + route.minPrice) as pathPrice
+ORDER BY pathPrice
+limit 1
+
+8. 
+MATCH paths=allShortestPaths((start:Airport{name:'LAX'})-[r:ROUTE*]->(end:Airport{name:'DAY'}))
+RETURN path, reduce(price=0, minPrice in [flight IN r | flight.businessPrice] | price+minPrice) as pathPrice
+ORDER BY pathPrice
+limit 1
+
+9. 
+MATCH (a1:Airport)<-[:ORIGIN]-(f:Flight)-[:DESTINATION]->(a2:Airport)
+UNWIND [a2, a1] as cities
+RETURN f.airline as airline, count(distinct cities) as nrCities
+order by nrCities
+
+10.
+MATCH (a1:Airport)-[r1:ROUTE]->(a2:Airport)-[r2:ROUTE]->(a3:Airport) WHERE NOT a1=a3
+RETURN a1 as firstCity,r1 as firstFlight, a2 as secondCity,r2 as secondFlight, a3 as thirdCity,r1.minPrice + r2.minPrice as price
+ORDER BY price
+limit 1
